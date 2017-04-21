@@ -15,6 +15,9 @@
 		317A4DC91EA99D8900657B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317A4DC71EA99D8900657B82 /* LaunchScreen.storyboard */; };
 		317A4DD41EA99D8900657B82 /* SchulteGridContestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DD31EA99D8900657B82 /* SchulteGridContestTests.m */; };
 		317A4DDF1EA99D8900657B82 /* SchulteGridContestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DDE1EA99D8900657B82 /* SchulteGridContestUITests.m */; };
+		317A4DEE1EA99DEA00657B82 /* SchulteGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */; };
+		317A4DF11EA9A03900657B82 /* SchulteGameBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */; };
+		317A4DF31EA9A61D00657B82 /* SchulteGridGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DF21EA9A61D00657B82 /* SchulteGridGame.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		317A4DDA1EA99D8900657B82 /* SchulteGridContestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SchulteGridContestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		317A4DDE1EA99D8900657B82 /* SchulteGridContestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SchulteGridContestUITests.m; sourceTree = "<group>"; };
 		317A4DE01EA99D8900657B82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		317A4DEC1EA99DEA00657B82 /* SchulteGridViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchulteGridViewController.h; sourceTree = "<group>"; };
+		317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchulteGridViewController.m; sourceTree = "<group>"; };
+		317A4DEF1EA9A03900657B82 /* SchulteGameBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SchulteGameBoardView.h; sourceTree = "<group>"; };
+		317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchulteGameBoardView.m; sourceTree = "<group>"; };
+		317A4DF21EA9A61D00657B82 /* SchulteGridGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchulteGridGame.m; sourceTree = "<group>"; };
+		317A4DF61EA9A6C000657B82 /* SchulteGridGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchulteGridGame.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +115,11 @@
 				317A4DBF1EA99D8900657B82 /* ViewController.h */,
 				317A4DC01EA99D8900657B82 /* ViewController.m */,
 				317A4DC21EA99D8900657B82 /* Main.storyboard */,
+				317A4DF51EA9A66400657B82 /* GameModel */,
+				317A4DEC1EA99DEA00657B82 /* SchulteGridViewController.h */,
+				317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */,
+				317A4DEF1EA9A03900657B82 /* SchulteGameBoardView.h */,
+				317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */,
 				317A4DC51EA99D8900657B82 /* Assets.xcassets */,
 				317A4DC71EA99D8900657B82 /* LaunchScreen.storyboard */,
 				317A4DCA1EA99D8900657B82 /* Info.plist */,
@@ -138,6 +152,15 @@
 				317A4DE01EA99D8900657B82 /* Info.plist */,
 			);
 			path = SchulteGridContestUITests;
+			sourceTree = "<group>";
+		};
+		317A4DF51EA9A66400657B82 /* GameModel */ = {
+			isa = PBXGroup;
+			children = (
+				317A4DF61EA9A6C000657B82 /* SchulteGridGame.h */,
+				317A4DF21EA9A61D00657B82 /* SchulteGridGame.m */,
+			);
+			name = GameModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +230,6 @@
 				TargetAttributes = {
 					317A4DB51EA99D8900657B82 = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = 4P6TC657TC;
 						ProvisioningStyle = Automatic;
 					};
 					317A4DCE1EA99D8900657B82 = {
@@ -276,9 +298,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				317A4DF11EA9A03900657B82 /* SchulteGameBoardView.m in Sources */,
 				317A4DC11EA99D8900657B82 /* ViewController.m in Sources */,
 				317A4DBE1EA99D8900657B82 /* AppDelegate.m in Sources */,
 				317A4DBB1EA99D8900657B82 /* main.m in Sources */,
+				317A4DF31EA9A61D00657B82 /* SchulteGridGame.m in Sources */,
+				317A4DEE1EA99DEA00657B82 /* SchulteGridViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +452,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4P6TC657TC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SchulteGridContest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superhero.liu.SchulteGridContest;
@@ -439,7 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 4P6TC657TC;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = SchulteGridContest/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = superhero.liu.SchulteGridContest;
