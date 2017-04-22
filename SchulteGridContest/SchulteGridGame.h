@@ -9,10 +9,36 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SchulteGridGame : NSObject
+typedef NS_ENUM(NSInteger,ContestDifficultyDegree) {
+    Easy,
+    Medium,
+    Hard,
+    Amateur,
+    Semi_Pro,
+    Professional,
+    Worldclass,
+    Legendary
+};
 
+typedef NS_ENUM(NSUInteger,GameState) {
+    Unstart,
+    Picking,
+    Terminated,
+    End
+    
+};
+
+
+@interface SchulteGridGame : NSObject
+@property(nonatomic) GameState CurrentGameState;
+@property(nonatomic) NSUInteger CurrentPickedNumber;
 -(void) setGameBoradWithWidth:(NSUInteger)width Height:(NSUInteger)height;
 
--(NSArray*)GenerateGridArrayWithDifficultyDegree:(double)degree;
+-(NSArray*)GenerateGridArrayWithDifficultyDegree:(ContestDifficultyDegree)degree;
+
+-(BOOL)StartGameWithNumber:(NSUInteger)n;
+-(BOOL)PickNextStepWithNumber:(NSUInteger)n;
+
+
 
 @end

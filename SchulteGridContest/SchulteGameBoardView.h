@@ -9,6 +9,17 @@
 #import <UIKit/UIKit.h>
 
 
+
+@class SchulteGameBoardView;
+
+@protocol SchulteGameBoardViewDelegate <NSObject>
+
+-(BOOL)SchulteGameBoardView:(SchulteGameBoardView*)aView
+            didSelectNumber:(NSUInteger)aNum;
+@end
+
+
+
 @interface SchulteGameBoardView : UIView
 
 
@@ -16,6 +27,10 @@
 @property(nonatomic)IBInspectable NSUInteger GameBoardWidth;
 @property(nonatomic)IBInspectable NSUInteger GameBoardHeight;
 @property(nonatomic) NSMutableArray* randomNumberArray;
+@property(nonatomic) id<SchulteGameBoardViewDelegate> delegate;
+
+
+
 
 
 -(void)initGameBoardWithWidth:(NSUInteger)width Height:(NSUInteger)height;

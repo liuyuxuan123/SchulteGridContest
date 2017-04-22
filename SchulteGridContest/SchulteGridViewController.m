@@ -10,7 +10,7 @@
 #import "SchulteGameBoardView.h"
 #import "SchulteGridGame.h"
 
-@interface SchulteGridViewController ()
+@interface SchulteGridViewController () <SchulteGameBoardViewDelegate>
 
 @property (weak, nonatomic) IBOutlet SchulteGameBoardView*SchulteGridGameBoard;
 
@@ -21,7 +21,40 @@
 
 @end
 
-@implementation SchulteGridViewController
+@implementation SchulteGridViewController 
+#pragma mark - Property Method
+
+-(SchulteGridGame*)SchulteGame{
+    if(_SchulteGame == nil){
+        _SchulteGame = [[SchulteGridGame alloc]init];
+    }
+    return _SchulteGame;
+}
+
+-(void)setSchulteGridGameBoard:(SchulteGameBoardView *)SchulteGridGameBoard{
+    _SchulteGridGameBoard = SchulteGridGameBoard;
+    UITapGestureRecognizer* SchulteGridGameBoardTapGestureRecognizer = [[UITapGestureRecognizer alloc]initWithTarget:SchulteGridGameBoard action:@selector(GameBoardTapGesture:)];
+    [_SchulteGridGameBoard addGestureRecognizer:SchulteGridGameBoardTapGestureRecognizer];
+}
+
+#pragma mark - Delegate Method
+-(BOOL)SchulteGameBoardView:(SchulteGameBoardView *)aView didSelectNumber:(NSUInteger)aNum {
+    //[self.SchulteGame ]
+    if(self.SchulteGame.CurrentGameState == Unstart){
+        if([self.SchulteGame StartGameWithNumber:aNum]){
+            return YES;
+        }
+    }else if(self.SchulteGame.CurrentGameState == Picking){
+        if([self.SchulteGame PickNextStepWithNumber:aNum]){
+            
+            return YES;
+        }
+    }
+    return NO;
+    
+}
+
+
 
 #pragma mark - Utility Methods
 -(NSUInteger) gameBoardGridAmount{
@@ -34,14 +67,6 @@
     self.GameBoardHeight = height;
 }
 
-#pragma mark - Property Method
-
--(SchulteGridGame*)SchulteGame{
-    if(_SchulteGame == nil){
-        _SchulteGame = [[SchulteGridGame alloc]init];
-    }
-    return _SchulteGame;
-}
 
 
 
@@ -50,7 +75,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    self.SchulteGridGameBoard.delegate = self;
     
     self.GameBoardWidth = 5;
     self.GameBoardHeight = 5;
@@ -59,7 +84,7 @@
     
     [self.SchulteGame setGameBoradWithWidth:self.GameBoardWidth Height:self.GameBoardHeight];
     
-    [self.SchulteGridGameBoard setRandomNumberArray:[self.SchulteGame GenerateGridArrayWithDifficultyDegree:0]];
+    [self.SchulteGridGameBoard setRandomNumberArray:[self.SchulteGame GenerateGridArrayWithDifficultyDegree:Medium]];
     
     
     

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		317A4DBB1EA99D8900657B82 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DBA1EA99D8900657B82 /* main.m */; };
 		317A4DBE1EA99D8900657B82 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DBD1EA99D8900657B82 /* AppDelegate.m */; };
-		317A4DC11EA99D8900657B82 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DC01EA99D8900657B82 /* ViewController.m */; };
 		317A4DC41EA99D8900657B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317A4DC21EA99D8900657B82 /* Main.storyboard */; };
 		317A4DC61EA99D8900657B82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 317A4DC51EA99D8900657B82 /* Assets.xcassets */; };
 		317A4DC91EA99D8900657B82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 317A4DC71EA99D8900657B82 /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		317A4DEE1EA99DEA00657B82 /* SchulteGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */; };
 		317A4DF11EA9A03900657B82 /* SchulteGameBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */; };
 		317A4DF31EA9A61D00657B82 /* SchulteGridGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 317A4DF21EA9A61D00657B82 /* SchulteGridGame.m */; };
+		573D48A6354A8EA04BA1395D /* Pods_SchulteGridContest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0956DDA795F528E83B41493 /* Pods_SchulteGridContest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +42,6 @@
 		317A4DBA1EA99D8900657B82 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		317A4DBC1EA99D8900657B82 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		317A4DBD1EA99D8900657B82 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		317A4DBF1EA99D8900657B82 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		317A4DC01EA99D8900657B82 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		317A4DC31EA99D8900657B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		317A4DC51EA99D8900657B82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		317A4DC81EA99D8900657B82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +58,9 @@
 		317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchulteGameBoardView.m; sourceTree = "<group>"; };
 		317A4DF21EA9A61D00657B82 /* SchulteGridGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SchulteGridGame.m; sourceTree = "<group>"; };
 		317A4DF61EA9A6C000657B82 /* SchulteGridGame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SchulteGridGame.h; sourceTree = "<group>"; };
+		4D124637C92D52C935C1EAB4 /* Pods-SchulteGridContest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchulteGridContest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SchulteGridContest/Pods-SchulteGridContest.debug.xcconfig"; sourceTree = "<group>"; };
+		D77B0309FFE930EED51AD501 /* Pods-SchulteGridContest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SchulteGridContest.release.xcconfig"; path = "Pods/Target Support Files/Pods-SchulteGridContest/Pods-SchulteGridContest.release.xcconfig"; sourceTree = "<group>"; };
+		E0956DDA795F528E83B41493 /* Pods_SchulteGridContest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SchulteGridContest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573D48A6354A8EA04BA1395D /* Pods_SchulteGridContest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +96,8 @@
 				317A4DD21EA99D8900657B82 /* SchulteGridContestTests */,
 				317A4DDD1EA99D8900657B82 /* SchulteGridContestUITests */,
 				317A4DB71EA99D8900657B82 /* Products */,
+				9A61312F4F81D0230389193E /* Pods */,
+				429A0A57B1083B2072BA0723 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,14 +116,10 @@
 			children = (
 				317A4DBC1EA99D8900657B82 /* AppDelegate.h */,
 				317A4DBD1EA99D8900657B82 /* AppDelegate.m */,
-				317A4DBF1EA99D8900657B82 /* ViewController.h */,
-				317A4DC01EA99D8900657B82 /* ViewController.m */,
 				317A4DC21EA99D8900657B82 /* Main.storyboard */,
+				317A4DF91EAB083F00657B82 /* GameController */,
 				317A4DF51EA9A66400657B82 /* GameModel */,
-				317A4DEC1EA99DEA00657B82 /* SchulteGridViewController.h */,
-				317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */,
-				317A4DEF1EA9A03900657B82 /* SchulteGameBoardView.h */,
-				317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */,
+				317A4DF81EAB081400657B82 /* GameView */,
 				317A4DC51EA99D8900657B82 /* Assets.xcassets */,
 				317A4DC71EA99D8900657B82 /* LaunchScreen.storyboard */,
 				317A4DCA1EA99D8900657B82 /* Info.plist */,
@@ -163,6 +163,41 @@
 			name = GameModel;
 			sourceTree = "<group>";
 		};
+		317A4DF81EAB081400657B82 /* GameView */ = {
+			isa = PBXGroup;
+			children = (
+				317A4DEF1EA9A03900657B82 /* SchulteGameBoardView.h */,
+				317A4DF01EA9A03900657B82 /* SchulteGameBoardView.m */,
+			);
+			name = GameView;
+			sourceTree = "<group>";
+		};
+		317A4DF91EAB083F00657B82 /* GameController */ = {
+			isa = PBXGroup;
+			children = (
+				317A4DEC1EA99DEA00657B82 /* SchulteGridViewController.h */,
+				317A4DED1EA99DEA00657B82 /* SchulteGridViewController.m */,
+			);
+			name = GameController;
+			sourceTree = "<group>";
+		};
+		429A0A57B1083B2072BA0723 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E0956DDA795F528E83B41493 /* Pods_SchulteGridContest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A61312F4F81D0230389193E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D124637C92D52C935C1EAB4 /* Pods-SchulteGridContest.debug.xcconfig */,
+				D77B0309FFE930EED51AD501 /* Pods-SchulteGridContest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -170,9 +205,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 317A4DE31EA99D8900657B82 /* Build configuration list for PBXNativeTarget "SchulteGridContest" */;
 			buildPhases = (
+				F3327B164CEE80DCD9C4A136 /* [CP] Check Pods Manifest.lock */,
 				317A4DB21EA99D8900657B82 /* Sources */,
 				317A4DB31EA99D8900657B82 /* Frameworks */,
 				317A4DB41EA99D8900657B82 /* Resources */,
+				366AD82E8BB40B19833977CD /* [CP] Embed Pods Frameworks */,
+				79A6A9CACB7F2B0643FE2AF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -293,13 +331,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		366AD82E8BB40B19833977CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchulteGridContest/Pods-SchulteGridContest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		79A6A9CACB7F2B0643FE2AF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SchulteGridContest/Pods-SchulteGridContest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F3327B164CEE80DCD9C4A136 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		317A4DB21EA99D8900657B82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				317A4DF11EA9A03900657B82 /* SchulteGameBoardView.m in Sources */,
-				317A4DC11EA99D8900657B82 /* ViewController.m in Sources */,
 				317A4DBE1EA99D8900657B82 /* AppDelegate.m in Sources */,
 				317A4DBB1EA99D8900657B82 /* main.m in Sources */,
 				317A4DF31EA9A61D00657B82 /* SchulteGridGame.m in Sources */,
@@ -450,6 +535,7 @@
 		};
 		317A4DE41EA99D8900657B82 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D124637C92D52C935C1EAB4 /* Pods-SchulteGridContest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -462,6 +548,7 @@
 		};
 		317A4DE51EA99D8900657B82 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D77B0309FFE930EED51AD501 /* Pods-SchulteGridContest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = "";
@@ -541,6 +628,7 @@
 				317A4DE51EA99D8900657B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317A4DE61EA99D8900657B82 /* Build configuration list for PBXNativeTarget "SchulteGridContestTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +637,7 @@
 				317A4DE81EA99D8900657B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		317A4DE91EA99D8900657B82 /* Build configuration list for PBXNativeTarget "SchulteGridContestUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +646,7 @@
 				317A4DEB1EA99D8900657B82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
