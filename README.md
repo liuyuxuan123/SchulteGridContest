@@ -2,7 +2,7 @@
 Schulte Grid Contest !!!!
 # ToDo List #
 ##
-* ~~Basic Algorithm ~~
+* ~~Basic Algorithm~~
 * Add Basic Arithmetical Calculation
 * Finger Map
 * Attention Map
