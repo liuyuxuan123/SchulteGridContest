@@ -8,4 +8,4 @@ Schulte Grid Contest !!!!
 * Attention Map
 ##
 
-## ![image](https://github.com/liuyuxuan123/SchulteGridContest/edit/master/Sample/Sample1.png)
+## ![image](https://github.com/liuyuxuan123/SchulteGridContest/blob/master/Sample/Sample1.png)
