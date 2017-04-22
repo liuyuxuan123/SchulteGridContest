@@ -9,4 +9,4 @@ Schulte Grid Contest !!!!
 ##
 
 
-![image](https://github.com/liuyuxuan123/SchulteGridContest/edit/master/Sample/Simulator Screen Shot 22 Apr 2017, 3.56.30 PM.png)
+![image](https://github.com/liuyuxuan123/SchulteGridContest/edit/master/Sample/Sample1.png)
